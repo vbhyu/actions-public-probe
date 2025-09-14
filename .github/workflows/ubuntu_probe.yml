@@ -1,0 +1,8 @@
+name: ubuntu-probe
+on:
+  push: {branches: [ main ]}
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "::notice:: HOSTED OK (public)"
